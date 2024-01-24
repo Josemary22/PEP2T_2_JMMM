@@ -3,8 +3,8 @@ public class PilotDigits {
     public static void main(String[] args) {
         Scanner leer = new Scanner(System.in);
         boolean menu = true;
-        DigiControl objeto = new DigiControl();
-        DigiIBAN objeto2 = new DigiIBAN();
+        DigiControl objeto = new DigiControl("","","");
+        DigiIBAN objeto2 = new DigiIBAN("","","");
         while(menu) {
             System.out.println("\033[1m\t  Menú de Opciones\033[0m");
             System.out.println("\033[1m\t  ================\033[0m");

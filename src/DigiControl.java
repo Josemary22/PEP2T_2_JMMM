@@ -2,6 +2,16 @@ import java.util.Scanner;
 
 public class DigiControl {
     private static final int[] ValoresConstantes = {1,2,4,8,5,10,9,7,3,6};
+    public String BancoDigitos;
+    public String SucursalDigitos;
+    public String CuentaDigitos;
+
+    public DigiControl(String BDC, String SDC, String CDC) {
+        BancoDigitos = BDC;
+        SucursalDigitos = SDC;
+        CuentaDigitos = CDC;
+    }
+
     public void IngresarDigitosControl() {
         Scanner leer = new Scanner(System.in);
         System.out.print("Ingrese los 4 digitos del banco: ");
@@ -21,7 +31,7 @@ public class DigiControl {
         int acumulado = 0;
         char[] Digitos = input.toCharArray();
         for (int i = 0; i < Digitos.length; i++) {
-            int Numeros = Character.getNumericValue(Digitos[i]);
+            int Numeros = Integer.parseInt(String.valueOf(Digitos[i]));
             acumulado += Numeros * ValoresConstantes[i];
         }
 
