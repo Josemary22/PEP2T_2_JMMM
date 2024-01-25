@@ -1,4 +1,6 @@
 import java.util.Scanner;
+import java.util.InputMismatchException;
+
 public class PilotDigits {
     public static void main(String[] args) {
         Scanner leer = new Scanner(System.in);
@@ -14,7 +16,8 @@ public class PilotDigits {
             System.out.println("4) Verificar digitos del IBAN");
             System.out.println("5) Salir");
             System.out.print("Opción: ");
-            int opcion = leer.nextInt();
+            try {
+                int opcion = leer.nextInt();
             switch (opcion) {
                 case 1:
                     objeto.IngresarDigitosControl();
@@ -31,6 +34,12 @@ public class PilotDigits {
                 case 5:
                     menu = false;
                     break;
+                default:
+                    System.out.println("Opción incorrecta, ingrese un número del 1 al 5");
+            }
+        } catch (InputMismatchException e) {
+                System.out.println("Opción incorrecta, ingrese una de las opciones");
+                leer.next();
             }
         }
     }

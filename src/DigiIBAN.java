@@ -22,6 +22,5 @@ public class DigiIBAN {
         String ControlDigitos = leer.next();
         System.out.print("Ingrese los 10 digitos de la cuenta: ");
         String CuentaDigitos = leer.next();
-
     }
 }

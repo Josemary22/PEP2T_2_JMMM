@@ -66,14 +66,14 @@ public class DigiControl {
         String DC1 = GenerarControlDigitos("00" + BancoDigitos + SucursalDigitos);
         String DC2 = GenerarControlDigitos(CuentaDigitos);
 
-        String DigitsCalculados = DC1 + DC2;
+        String DigitosCalculados = DC1 + DC2;
 
-        if (ControlDigitos.equals(DigitsCalculados)) {
+        if (ControlDigitos.equals(DigitosCalculados)) {
             System.out.println("Número de cuenta a validar: " + BancoDigitos + " " + SucursalDigitos + " " + ControlDigitos + " " + CuentaDigitos);
-            System.out.println("Dígitos calculados: " + DigitsCalculados + " Verificación: Correcta");
+            System.out.println("Dígitos calculados: " + DigitosCalculados + " Verificación: Correcta");
         } else {
             System.out.println("Número de cuenta a validar: " + BancoDigitos + " " + SucursalDigitos + " " + ControlDigitos + " " + CuentaDigitos);
-            System.out.println("Dígitos calculados: " + DigitsCalculados + " Verificación: Incorrecta");
+            System.out.println("Dígitos calculados: " + DigitosCalculados + " Verificación: Incorrecta");
         }
     }
 }
