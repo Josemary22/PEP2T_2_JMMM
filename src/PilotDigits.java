@@ -6,7 +6,7 @@ public class PilotDigits {
         Scanner leer = new Scanner(System.in);
         boolean menu = true;
         DigiControl objeto = new DigiControl("","","");
-        DigiIBAN objeto2 = new DigiIBAN("","","");
+        DigiIBAN objeto2 = new DigiIBAN("","","", "", "", "");
         while(menu) {
             System.out.println("\033[1m\t  Menú de Opciones\033[0m");
             System.out.println("\033[1m\t  ================\033[0m");
@@ -26,7 +26,8 @@ public class PilotDigits {
                     objeto.VerificacionControDigitos();
                     break;
                 case 3:
-                    objeto2.IngresarDigitosIban();
+                    objeto2.IngresarDigitosIBAN();
+                    objeto2.GenerarIBAN();
                     break;
                 case 4:
                     objeto2.VerificacionIBAN();

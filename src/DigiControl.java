@@ -27,7 +27,7 @@ public class DigiControl {
         System.out.println("2098 0008 DC1DC2 1207383832 --> " + BancoDigitos + " " + SucursalDigitos + " " + DC1 + DC2 + " " + CuentaDigitos);
     }
 
-    private static String GenerarControlDigitos(String input) {
+    private String GenerarControlDigitos(String input) {
         int acumulado = 0;
         char[] Digitos = input.toCharArray();
         for (int i = 0; i < Digitos.length; i++) {
