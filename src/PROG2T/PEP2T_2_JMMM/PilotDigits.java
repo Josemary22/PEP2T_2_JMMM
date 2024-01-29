@@ -16,13 +16,13 @@ public class PilotDigits {
         // Bucle del menú
         while(menu) {
             // Menú de opciones
-            System.out.println("\t \t Menú de Opciones");
+            System.out.println("\n\t \t Menú de Opciones");
             System.out.println("\t \t ================");
             System.out.println("\t 1) Generar digitos de control");
             System.out.println("\t 2) Verificar digitos de control");
             System.out.println("\t 3) Generar digitos del IBAN");
             System.out.println("\t 4) Verificar digitos del IBAN");
-            System.out.println("\t 5) Salir");
+            System.out.println("\t 5) Salir \n");
             System.out.print("\t \t Opción: ");
             try {
                 // Lectura de la opción ingresada por el usuario
