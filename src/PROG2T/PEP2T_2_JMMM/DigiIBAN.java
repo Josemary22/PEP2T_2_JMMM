@@ -54,7 +54,7 @@ public class DigiIBAN {
 
         // Convertimos el resultado a String e Integer
         String Valor = String.valueOf(Resto98);
-        Integer Resultado = Integer.parseInt(Valor);
+        int Resultado = Integer.parseInt(Valor);
 
         // Formato final del IBAN
         if (Resultado <= 9) {
